@@ -33,4 +33,22 @@ import 'dart:io';
 
 void main() {
 
+  bool condition =  true;
+
+  while (condition == true) {
+    print('Enter the number 100');
+    String userString = (stdin.readLineSync());
+
+
+    if (userString.toLowerCase() == 'stop') {
+      print('Goodbye');
+      break;
+    } else if (userString == '100') {
+      print('Good job! Program successful!');
+      break;
+    }
+
+
+  }
+
 }
